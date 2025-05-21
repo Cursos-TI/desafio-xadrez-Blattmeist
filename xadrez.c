@@ -1,32 +1,80 @@
 #include <stdio.h>
-
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
-
+ 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    int torre = 1, rainha = 1, bispo = 1, cavalo = 1;
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+        printf("Movimento da Torre:\n");
+                printf("\n");
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+        for (int torre = 1; torre <= 5; torre++) {
+            
+             printf("Direita\n");
+                printf("\n");
+        }
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+        printf("Movimento da Rainha:\n");
+                printf("\n");
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+        for (int rainha = 1; rainha <= 8; rainha++) {
+            
+             printf("Esquerda\n");
+                printf("\n");
+        }
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+        // Para a obrigatoriedade de um loop do while, usei o movimento em duas etapas do bispo para isso
+        //  cada impressão de "cima" eu imprimo uma impressão "Direita" para representar no o movimento
+
+        printf("Movimento da Bispo:\n");
+                printf("\n");
+
+            do
+                {     int i = 1;
+
+                    do
+            {
+                printf("Cima -->");
+                i++;
+
+                } while (i <= 1);
+                bispo++;
+
+                    printf(" Direita\n");
+                        printf("\n");
+
+
+            } while (bispo <=5);
+            
+
+
+
+
+        //for (int bispo = 1; bispo <= 5; bispo++) {
+            // Apenas para simular um atraso
+          //   printf("Cima --> Direita\n");
+            //    printf("\n");
+        //}
+
+        printf("Movimento da Cavalo:\n");
+                printf("\n");
+
+        // para o loop for, usando o movimento do cavalo, para cada 2 "Baixo" eu faço um "Esquerda"
+        // e limitei a quantidade da impressao de "Baixo" para uma, assim condizendo com o movimento
+
+        for (int cavalo = 1; cavalo <= 1; cavalo++) {
+
+            for (int cavalo = 1; cavalo <= 2; cavalo++) {
+            // Apenas para simular um atraso
+                printf("Baixo\n");
+                    printf("\n");
+            }
+            // Apenas para simular um atraso
+             printf("Esquerda\n");
+                printf("\n");
+        }
+
+
+
 
     return 0;
 }
